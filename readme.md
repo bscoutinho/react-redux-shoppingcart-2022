@@ -1,1 +1,1 @@
-Two Sample projects with Redux and Redux Toolkit using a shopping cart demo. 2022
+Two Sample projects with Redux and Redux Toolkit using a shopping cart demo. August 2022
