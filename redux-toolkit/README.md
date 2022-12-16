@@ -1,16 +1,12 @@
 # Redux Toolkit 2022
 
-#### React Course
 
-[My React Course](https://www.udemy.com/course/react-tutorial-and-projects-course/?referralCode=FEE6A921AF07E2563CEF)
+#### Json Server
 
-#### Support
+```sh
+json-server --watch db.json
+```
 
-Find the App Useful? [You can always buy me a coffee](https://www.buymeacoffee.com/johnsmilga)
-
-#### Docs
-
-[Redux Toolkit Docs](https://redux-toolkit.js.org/introduction/getting-started)
 
 #### Install Template
 
@@ -602,18 +598,17 @@ export default Modal;
 
 #### async functionality with createAsyncThunk
 
-- [Course API](https://course-api.com/)
-- https://course-api.com/react-useReducer-cart-project
 - cartSlice.js
 
 - action type
 - callback function
 - lifecycle actions
+- json-server --watch db.json
 
 ```js
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-const url = 'https://course-api.com/react-useReducer-cart-project';
+const url = 'http://localhost:3000/items';
 
 export const getCartItems = createAsyncThunk('cart/getCartItems', () => {
   return fetch(url)
